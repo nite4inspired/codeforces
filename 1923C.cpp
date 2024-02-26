@@ -9,10 +9,11 @@ int main(void) {
     int t;
     cin >> t;
     vector<vector<string>> answers(t);
-    int n, q, l, r, sum;
+    int n, q, l, r;
+    long long sum;
     for (int i = 0; i < t; i++) {
         cin >> n >> q;
-        vector<int> entry(n + 1, 0);
+        vector<long long> entry(n + 1, 0);
         vector<string> answer(q);
         for (int j = 1; j <= n; j++) {
             cin >> entry[j];
